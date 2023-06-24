@@ -8,7 +8,8 @@ To use this package, add `circular_charts` as a dependency in your `pubspec.yaml
 
 ## Example
 
-<img width="309" alt="Screenshot 2023-06-24 at 8 44 32 AM" src="https://github.com/Rachit2030/circular_charts/assets/69667845/78db3cc9-a2c1-46f9-b241-3ec5e179e6d7">
+<img width="307" alt="Screenshot 2023-06-24 at 8 54 59 AM" src="https://github.com/Rachit2030/circular_charts/assets/69667845/d880f0c5-3862-4f08-9089-e8760f8bed87">
+<img width="309" alt="Screenshot 2023-06-24 at 9 00 19 AM" src="https://github.com/Rachit2030/circular_charts/assets/69667845/ab462b35-5ab2-4961-82e8-69429213b8d7">
 
 
 ## Usage
