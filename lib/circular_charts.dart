@@ -29,12 +29,12 @@ class CircularChart extends StatefulWidget {
     required this.pieChartChildNames,
     required this.pieChartPercentages,
     required this.pieChartStartColors,
-    this.centreCircleTitle = "",
+    this.centreCircleTitle = "Overall",
     this.isShowingCentreCircle = false,
     this.isShowingLegend = false,
-    this.centreCircleBackgroundColor,
-    this.centreCirclePercentageTextStyle,
-    this.centreCircleSubtitleTextStyle,
+    this.centreCircleBackgroundColor = Colors.white,
+    this.centreCirclePercentageTextStyle = null,
+    this.centreCircleSubtitleTextStyle = null,
   });
 
   @override
@@ -87,7 +87,7 @@ class _CircularChartState extends State<CircularChart>
         text: widget.centreCircleTitle,
         style: widget.centreCircleSubtitleTextStyle ??
             const TextStyle(
-              fontSize: 14,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
       );

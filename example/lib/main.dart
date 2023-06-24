@@ -57,6 +57,7 @@ class _HomePageState extends State<HomePage> {
         alignment: Alignment.center,
         child: CircularChart(
           isShowingCentreCircle: true,
+          centreCircleBackgroundColor: Colors.white,
           animationTime: 800,
           chartHeight: 300,
           chartWidth: 400,
@@ -84,6 +85,7 @@ class _HomePageState extends State<HomePage> {
             Color(0xff00dbbe),
             Color(0xfff280ff),
           ],
+          centreCircleTitle: "OVERALL",
           pieChartPercentages: [0, 20, 20, 0, 0, 0],
           isShowingLegend: true,
         ),

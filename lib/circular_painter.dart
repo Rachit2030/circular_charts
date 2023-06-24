@@ -110,8 +110,11 @@ class DrawFlowerPainter extends CustomPainter {
       solidColorPaint.shader = null;
 
       solidColorPaint.color = TRANSPARENT_BLACK;
-      drawPetal(canvas, cubicControlPointAngle, currentRotateAngleInRad, i,
-          scaleFactors[i], solidColorPaint);
+
+      if (isShowingCentreCircle) {
+        drawPetal(canvas, cubicControlPointAngle, currentRotateAngleInRad, i,
+            scaleFactors[i], solidColorPaint);
+      }
 
       if (isShowingLegend) {
         if (!isAnimating) {
