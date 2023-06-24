@@ -1,39 +1,67 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Circular Charts
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+Animated Flower-shaped chart for Flutter.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Getting Started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+To use this package, add `circular_charts` as a dependency in your `pubspec.yaml` file.
 
-## Features
+## Example
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+<img width="309" alt="Screenshot 2023-06-24 at 8 44 32 AM" src="https://github.com/Rachit2030/circular_charts/assets/69667845/78db3cc9-a2c1-46f9-b241-3ec5e179e6d7">
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Basic usage of `circular_charts` requires the following parameters:
+
+- `chartHeight` _(double)_
+- `chartWidth` _(double)_
+- `pieChartChildNames` _(List<String>)_
+- `pieChartPercentages` _(List<double>)_
+- `pieChartStartColors` _(List<Color>)_
+- `pieChartEndColors` _(List<Color>)_
+- `isShowingLegend` _(bool)_
+- `isShowingCentreCircle` _(bool)_
+- `animationTime` _(double)_
+- `centreCircleBackgroundColor` _(Color?)_
+- `centreCirclePercentageTextStyle` _(TextStyle?)_
+- `centreCircleSubtitleTextStyle` _(TextStyle?)_
+- `centreCircleTitle` _(String?)_
+- `overAllPercentage` _(double)_
 
 ```dart
-const like = 'sample';
+CircularChart(
+  isShowingCentreCircle: true,
+  animationTime: 800,
+  chartHeight: 300,
+  chartWidth: 400,
+  pieChartChildNames: [
+    "Maths",
+    "History",
+    "Science",
+    "Chemistry",
+    "Physics",
+    "English"
+  ],
+  pieChartEndColors: [
+    Color(0xfffc7e00),
+    Color(0xfffc6076),
+    Color(0xff007ced),
+    Color(0xff4e9b01),
+    Color(0xff009efd),
+    Color(0xffff4b63),
+  ],
+  pieChartStartColors: [
+    Color(0xffffd200),
+    Color(0xffff9231),
+    Color(0xff00beeb),
+    Color(0xff92d108),
+    Color(0xff00dbbe),
+    Color(0xfff280ff),
+  ],
+  pieChartPercentages: [0, 20, 20, 0, 0, 0],
+  isShowingLegend: true,
+),
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+A full example (as seen in the screenshots) can be found in example/lib/main.dart
