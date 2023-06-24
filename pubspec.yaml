@@ -1,10 +1,10 @@
 name: circular_charts
-description: A new Flutter package project.
+description: Animated Flower Chart for Flutter
 version: 0.0.1
-homepage:
+homepage: https://github.com/Rachit2030/circular_charts.git
 
 environment:
-  sdk: '>=3.0.5 <4.0.0'
+  sdk: '>=2.19.6 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
