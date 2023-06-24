@@ -33,8 +33,8 @@ class CircularChart extends StatefulWidget {
     this.isShowingCentreCircle = false,
     this.isShowingLegend = false,
     this.centreCircleBackgroundColor = Colors.white,
-    this.centreCirclePercentageTextStyle = null,
-    this.centreCircleSubtitleTextStyle = null,
+    this.centreCirclePercentageTextStyle,
+    this.centreCircleSubtitleTextStyle,
   });
 
   @override
